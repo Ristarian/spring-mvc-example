@@ -1,41 +1,39 @@
 package controller;
 
 public class Car {
+   private int id;
+   private String mark;
+   private int power;
+   public Car() {
+   }
 
-    private int id;
-    private String mark;
-    private int power;
+   public Car(int id, String mark, int power) {
+       this.id = id;
+       this.mark = mark;
+       this.power = power;
+   }
 
-    public Car(){
-    }
+   public int getId() {
+       return id;
+   }
 
-    public Car (int id, String mark, int power){
-        this.id = id;
-        this.mark = mark;
-        this.power = power;
-    }
+   public void setId(int id) {
+       this.id = id;
+   }
 
-    public int getId() {
-        return id;
-    }
+   public String getMark() {
+       return mark;
+   }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+   public void setMark(String mark) {
+       this.mark = mark;
+   }
 
-    public String getMark() {
-        return mark;
-    }
+   public int getPower() {
+       return power;
+   }
 
-    public void setMark(String mark) {
-        this.mark = mark;
-    }
-
-    public int getPower() {
-        return power;
-    }
-
-    public void setPower(int power) {
-        this.power = power;
-    }
+   public void setPower(int power) {
+       this.power = power;
+   }
 }
